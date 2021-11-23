@@ -53,16 +53,29 @@
     display: block;
   }
   
+  #text-fot{
+      color: red;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    opacity:unset;
+  }
 
-  
-  
-
-  
   .trynow{
       background-color: gray;
-      
+      padding: 0.8rem 1.8rem;
+      margin: auto;
       margin-top: 2rem;
       text-decoration: solid;
+      max-width: 400px;
+      align-items: center;
+      display: block;
   }
   
   .btn:hover {
