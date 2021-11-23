@@ -1,0 +1,77 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+
+  a {
+    color: rgb(0, 0, 0);
+    /* text-decoration: none; */
+  }
+  
+  .container {
+
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  
+
+  .card {
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-gap: 2rem;
+    background: #dadada;
+}
+  .cardtext{
+      font-size:1.3em;
+      color: #727272;
+  }
+  .card h3 {
+    margin-bottom: 2rem;
+  }
+  
+
+  
+  .card > div {
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+  
+
+  
+  
+
+  
+  .trynow{
+      background-color: gray;
+      
+      margin-top: 2rem;
+      text-decoration: solid;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  @media(max-width:600px) {
+    .card {
+      display: block;
+    }
+  }
+  
