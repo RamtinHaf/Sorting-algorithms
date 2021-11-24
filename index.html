@@ -1,21 +1,20 @@
 <html lang="en">
 
-    <head>
-        
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
 
-        <script src="/src/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="/src/script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sortano</title>
 </head>
 <nav class="navbar navbar-light bg-dark">
-    <a class="navbar-brand" href="#">
-        <img src="logo4.png" width="40" height="35" class="d-inline-block align-top" alt="">
-        Sortano
+    <a class="navbar-brand" href="index.html">
+        <img src="logo4.png" width="40" height="35" class="d-inline-block align-top" alt=""> Sortano
     </a>
     <span style="float: right; color: azure;">Created by Ramtin H.</span>
 </nav>
@@ -23,101 +22,108 @@
 <main class="container">
     <!-- QUICKSORT -->
     <section class="card" data-aos="fade-right">
-      <div>
-        <h3>QuickSort</h3>
-        <p class="cardtext">
-          Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
-        </p>
-    
-        <div class="trynow">
-    
-          <a href="#" class="btn">Try it out</a>
-      </div>
-      </div>
-    </section>  
-    
+        <div>
+            <h3>QuickSort</h3>
+            <p class="cardtext">
+                Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
+            </p>
+
+
+            <a href="pages/quicksort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
+
+        </div>
+    </section>
+
     <!-- MERGESORT -->
     <section class="card" data-aos="fade-left">
-      <div>
-        <h3>Merge Sort</h3>
-        <p class="cardtext">
-          Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See the following C implementation for details.
-        </p>
-        <div class="trynow">
-    
-          <a href="#" class="btn">Try it out</a>
-      </div>
-      </div>
-    </section>  
+        <div>
+            <h3>Merge Sort</h3>
+            <p class="cardtext">
+                Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m,
+                r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See the following C implementation for details.
+            </p>
+            <a href="pages/mergesort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
+        </div>
+    </section>
 
     <!-- BUBBLESORT -->
     <section class="card" data-aos="fade-right">
         <div>
-          <h3>BubbleSort</h3>
-          <p class="cardtext">
-            Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
-          </p>
-          <div class="trynow">
-
-              <a href="/pages/bubblesort.html" class="btn">Try it out</a>
-          </div>
+            <h3>BubbleSort</h3>
+            <p class="cardtext">
+                Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+            </p>
+            <a href="pages/bubblesort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
         </div>
-      </section> 
+    </section>
 
 
     <!-- SELECTION SORT -->
-      <section class="card" data-aos="fade-left">
+    <section class="card" data-aos="fade-left">
         <div>
-          <h3>SelectionSort</h3>
-          <p class="cardtext">
-            The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
-            from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
-          </p>
-          <div class="trynow">
-
-            <a href="/pages/selectionsort.html" class="btn">Try it out</a>
+            <h3>SelectionSort</h3>
+            <p class="cardtext">
+                The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+            </p>
+            <a href="pages/selectionsort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
         </div>
-    </div>
-      </section> 
+    </section>
 
-      <!-- INSERTIONSORT -->
-      <section class="card"  data-aos="fade-right">
+    <!-- INSERTIONSORT -->
+    <section class="card" data-aos="fade-right">
         <div>
-          <h3>InsertionSort</h3>
-          <p class="cardtext">
-            The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part 
-            and putting it at the beginning. The algorithm maintains two subarrays in a given array.
-          </p>
-          <div class="trynow">
-
-            <a href="#" class="btn">Try it out</a>
+            <h3>InsertionSort</h3>
+            <p class="cardtext">
+                The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+            </p>
+            <a href="pages/insertionsort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
         </div>
-        </div>
-      </section>
+    </section>
 
-      <!-- HEAPSORT -->
-      <section class="card"  data-aos="fade-left">
+    <!-- HEAPSORT -->
+    <section class="card" data-aos="fade-left">
         <div>
-          <h3>HeapSort</h3>
-          <p class="cardtext">
-            Heap sort is a comparison-based sorting technique based on Binary Heap data structure. 
-            It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements.
-          </p>
-          <div class="trynow">
-
-            <a href="#" class="btn">Try it out</a>
+            <h3>HeapSort</h3>
+            <p class="cardtext">
+                Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining
+                elements.
+            </p>
+            <a href="pages/heapsort.html" class="btn">
+                <div class="trynow">
+                    Try it out
+                </div>
+            </a>
         </div>
-        </div>
-    </section>  
+    </section>
 
 
-      <div class="footer">SORTANO status: <span id="text-fot"> Under Maintenance</span></div>
+    <div class="footer">SORTANO status: <span id="text-fot"> Under Maintenance, currently working on QuickSort</span></div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          offset: 200,
-          duration: 1000
-      });
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
     </script>
 </main>
 
