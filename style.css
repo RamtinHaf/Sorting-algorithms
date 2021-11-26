@@ -84,3 +84,7 @@ a {
         display: block;
     }
 }
+
+canvas {
+    vertical-align: top;
+}
