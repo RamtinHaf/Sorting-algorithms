@@ -1,5 +1,8 @@
 let quicksortArray = [];
 var chosenValueQuicksort;
+let cancan = document.getElementsByTagName("CANVAS");
+console.log(cancan)
+    // document.getElementById("quicksort-card").appendChild(cancan);
 
 function quicksortStartup() {
     chosenValueQuicksort = document.getElementById("number-quick").value;
@@ -29,7 +32,7 @@ console.log(quicksortArray)
 let states = [];
 
 function setup() {
-    createCanvas(600, 400)
+    createCanvas(windowWidth, windowHeight)
 
 
     quicksortArray = Array.from({ length: chosenValueQuicksort }, () => Math.floor(Math.random() * 201));
@@ -96,9 +99,9 @@ function draw() {
 
     // Set Background Color 
     background(3);
-
+    // noStroke();
     for (let i = 0; i < quicksortArray.length; i++) {
-        noStroke();
+        // noStroke();
         if (states[i] == 0) {
             fill('#E0777D');
         } else if (states[i] == 1) {
@@ -107,7 +110,7 @@ function draw() {
             fill(255);
         }
 
-        rect(i * 5, quicksortArray[i], 5, quicksortArray[i], 3);
+        rect(i * 15, height - quicksortArray[i], 15, quicksortArray[i]);
     }
 }
 
