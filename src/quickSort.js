@@ -1,24 +1,28 @@
 let quicksortArray = [];
 var chosenValueQuicksort;
+let quicksortArray_String;
 let cancan = document.getElementsByTagName("CANVAS");
 console.log(cancan)
     // document.getElementById("quicksort-card").appendChild(cancan);
 
+
+
+
 function quicksortStartup() {
     chosenValueQuicksort = document.getElementById("number-quick").value;
-    if (chosenValueQuicksort > 200 || chosenValueQuicksort < 0) {
+    if (chosenValueQuicksort > 70 || chosenValueQuicksort < 0) {
         document.getElementById("quicksort-number").innerHTML = "Sorry, invalid number";
         document.getElementById("number-quick").value = "";
         document.getElementById("quicksort-array").textContent = "";
     } else {
         console.log("User choose", chosenValueQuicksort, "number")
-        document.getElementById("quicksort-number").innerHTML = "User has chosen " + chosenValueQuicksort + " random numbers (0 - 200) to sort: ";
+        document.getElementById("quicksort-number").innerHTML = "User has chosen " + chosenValueQuicksort + " random numbers (0 - 500) to sort: ";
 
-        // max 200 random numbers
-        quicksortArray = Array.from({ length: chosenValueQuicksort }, () => Math.floor(Math.random() * 201));
+        // max 500 random numbers
+        quicksortArray = Array.from({ length: chosenValueQuicksort }, () => Math.floor(Math.random() * 501));
         console.log(quicksortArray);
         // displaying the array in DOM
-        let quicksortArray_String = quicksortArray.map(String);
+        quicksortArray_String = quicksortArray.map(String);
         console.log(quicksortArray_String);
 
         document.getElementById("quicksort-array").textContent = quicksortArray_String;
@@ -32,11 +36,8 @@ console.log(quicksortArray)
 let states = [];
 
 function setup() {
-    createCanvas(windowWidth, windowHeight)
-
-
+    createCanvas(1100, 600)
     quicksortArray = Array.from({ length: chosenValueQuicksort }, () => Math.floor(Math.random() * 201));
-
     for (let i = 0; i < quicksortArray.length; i++) {
         states[i] = -1;
     }
@@ -117,7 +118,7 @@ function draw() {
 async function swap(arr, a, b) {
 
     // Call to sleep function
-    await sleep(150);
+    await sleep(100);
     let t = arr[a];
     arr[a] = arr[b];
     arr[b] = t;
@@ -127,19 +128,3 @@ async function swap(arr, a, b) {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-// function draw(quicksortArray) {
-//     background(0);
-
-//     for (let i = 0; i < quicksortArray.length; i++) {
-//         noStroke();
-//         if (states[i] == 0) {
-//             fill('#E0777D');
-//         } else if (states[i] == 1) {
-//             fill('#D6FFB7');
-//         } else {
-//             fill(255);
-//         }
-//         // rect(i * w, height - quicksortArray[i], w, quicksortArray[i]);
-//     }
-// }

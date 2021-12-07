@@ -58,6 +58,7 @@ a {
     color: white;
     text-align: center;
     opacity: unset;
+    clear: both;
 }
 
 .trynow {
